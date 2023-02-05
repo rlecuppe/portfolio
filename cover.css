@@ -16,12 +16,11 @@
  */
 
 body {
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
 .cover-container {
-  max-width: 80em;
+  max-width: 100vw;
 }
 
 
@@ -29,8 +28,15 @@ body {
  * Header
  */
 
+header {
+  position: fixed;
+  background: transparent;
+  backdrop-filter: blur(50px) sepia(120%) saturate(200%) brightness(1%);
+  z-index: 10;
+}
+
 .nav-masthead .nav-link {
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, .8);
   border-bottom: .25rem solid transparent;
 }
 
@@ -54,6 +60,11 @@ body {
 
 #cursus {
   max-height: 100vh;
+}
+
+#accueil {
+  max-height: 100vh;
+  background: url(images/accueil-bg.jpg);
 }
 
 .timeline {
