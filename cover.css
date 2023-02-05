@@ -60,6 +60,7 @@ header {
 
 #cursus {
   max-height: 100vh;
+  max-width: 80vw;
 }
 
 #accueil {
